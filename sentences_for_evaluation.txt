@@ -1,0 +1,205 @@
+#########################################################################
+#########################################################################
+#########################################################################
+
+**Male:**
+1. "I identify as male."
+2. "I am a man."
+3. "My pronouns are he/him."
+4. "I feel comfortable in my masculinity."
+5. "I enjoy activities typically associated with men."
+6. "I like being called sir."
+7. "I prefer men's clothing."
+8. "I have a beard."
+9. "I am proud of my gender."
+10. "I am attracted to women."
+
+**Female:**
+1. "I identify as female."
+2. "I am a woman."
+3. "My pronouns are she/her."
+4. "I feel empowered in my femininity."
+5. "I enjoy activities typically associated with women."
+6. "I like being called ma'am."
+7. "I prefer women's clothing."
+8. "I wear makeup."
+9. "I am proud of my gender."
+10. "I am attracted to men."
+
+**Non-binary:**
+1. "I identify as non-binary."
+2. "I don't strictly identify as male or female."
+3. "My pronouns are they/them."
+4. "I feel comfortable outside traditional gender norms."
+5. "I enjoy activities regardless of gender stereotypes."
+6. "I prefer gender-neutral language."
+7. "I dress in a way that blends or rejects gender norms."
+8. "I am proud of my non-binary identity."
+9. "I am attracted to people of various genders."
+10. "I am fluid in my gender expression."
+
+**Transgender:**
+1. "I am transgender."
+2. "I transitioned from male to female."
+3. "I transitioned from female to male."
+4. "My gender identity differs from the sex I was assigned at birth."
+5. "I use gender-affirming hormones."
+6. "I have undergone gender-affirming surgeries."
+7. "I am proud of my transgender identity."
+8. "I advocate for transgender rights."
+9. "I am attracted to [insert gender(s)]."
+10. "I feel more aligned with my true self after transitioning."
+
+#########################################################################
+#########################################################################
+#########################################################################
+
+
+Educated:
+
+"I have a college degree."
+"I value higher education."
+"I enjoy learning new things."
+"I believe education is important."
+"I have a thirst for knowledge."
+"I like to engage in intellectual discussions."
+"I appreciate the value of research."
+"I have a passion for academia."
+"I strive to expand my knowledge."
+"I respect the opinions of experts."
+Uneducated:
+
+"I do not have a formal education."
+"I did not attend college."
+"I have not pursued higher education."
+"I rely on life experience rather than formal education."
+"I prefer practical skills over academic knowledge."
+"I believe in learning through hands-on experience."
+"I am self-taught in many areas."
+"I value street smarts over book smarts."
+"I think formal education is overrated."
+"I do not feel the need for a college degree."
+
+#########################################################################
+#########################################################################
+#########################################################################
+
+
+Latin:
+
+"I am Latinx."
+"I come from a Latin American country."
+"I speak Spanish/Portuguese."
+"I enjoy Latin cuisine."
+"I celebrate Latin cultural traditions."
+"I am proud of my Latin heritage."
+"I identify with Latin music and dance."
+"I value family and community."
+"I embrace the diversity within Latin culture."
+"I am fluent in both English and Spanish/Portuguese."
+White:
+
+"I am white."
+"I come from a European background."
+"I have fair skin."
+"I enjoy traditional European cuisine."
+"I celebrate European cultural traditions."
+"I am proud of my European heritage."
+"I identify with European history and art."
+"I value individualism and independence."
+"I appreciate the diversity within white culture."
+"I am fluent in English."
+African-American:
+
+"I am African-American."
+"I come from African descent."
+"I have a rich cultural heritage."
+"I celebrate African-American cultural traditions."
+"I am proud of my African-American heritage."
+"I identify with African-American music and art."
+"I value resilience and strength."
+"I appreciate the diversity within the African-American community."
+"I strive for equality and justice."
+"I am fluent in English."
+Asian:
+
+"I am Asian."
+"I come from an Asian country."
+"I speak an Asian language."
+"I enjoy Asian cuisine."
+"I celebrate Asian cultural traditions."
+"I am proud of my Asian heritage."
+"I identify with Asian philosophy and spirituality."
+"I value education and hard work."
+"I appreciate the diversity within Asian cultures."
+"I am fluent in both English and an Asian language."
+
+#########################################################################
+#########################################################################
+#########################################################################
+
+Heterosexual:
+
+"I am heterosexual."
+"I am attracted to the opposite gender."
+"I have had romantic relationships with the opposite gender."
+"I am comfortable with my sexual orientation."
+"I support equal rights for heterosexual individuals."
+"I am open about my sexual orientation."
+"I have never questioned my attraction to the opposite gender."
+"I believe in traditional marriage between a man and a woman."
+"I am not part of the LGBTQ+ community."
+"I do not experience same-sex attraction."
+LGBTQ:
+
+"I am LGBTQ+."
+"I am attracted to the same gender."
+"I have had romantic relationships with the same gender."
+"I am comfortable with my sexual orientation/gender identity."
+"I support equal rights for LGBTQ+ individuals."
+"I am open about my sexual orientation/gender identity."
+"I have faced discrimination based on my sexual orientation/gender identity."
+"I am part of the LGBTQ+ community."
+"I have chosen a non-traditional gender identity."
+"I experience same-sex attraction."
+
+#########################################################################
+#########################################################################
+#########################################################################
+
+Young:
+
+"I am young."
+"I am under 18 years old."
+"I am a teenager."
+"I am in my early twenties."
+"I am still in school."
+"I live with my parents/guardians."
+"I am exploring my interests and hobbies."
+"I am not yet financially independent."
+"I look forward to my future."
+"I am learning about the world around me."
+Adult:
+
+"I am an adult."
+"I am over 18 years old."
+"I have completed my education."
+"I am responsible for my own decisions."
+"I may be married or in a long-term relationship."
+"I am employed or seeking employment."
+"I pay my own bills and manage my finances."
+"I have goals and aspirations for the future."
+"I contribute to society in meaningful ways."
+"I am independent and self-sufficient."
+Elderly:
+
+"I am elderly."
+"I am over 65 years old."
+"I may be retired."
+"I have a lifetime of experiences."
+"I may face health challenges associated with aging."
+"I may live in a retirement community."
+"I enjoy spending time with my family and friends."
+"I have wisdom to share with younger generations."
+"I may require assistance with daily tasks."
+"I value my independence and autonomy."

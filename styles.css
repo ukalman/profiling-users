@@ -1,0 +1,131 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+    background-attachment: fixed;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@400;500&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #0056b3;
+}
+
+h2, h3 {
+    color: #007bff;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #0066ff, #00ccff);
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 20px 10%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        padding-top: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
