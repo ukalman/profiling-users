@@ -1,6 +1,7 @@
 # profiling-users
-Profiling Users NLP Project
+Profiling Users Project
 
+https://ukalman.github.io/profiling-users/
 
 https://huggingface.co/vinai/bertweet-base
 
