@@ -2,19 +2,24 @@ Nonbin: 3521 - 37 -
 Female: 8234 - 83 
 Trans: 5216 - 56 
 Male: 5481 - 57 ---
+Tweet:21984
+
 
 Adult: 7711 - 87   
 Elderly: 8339 - 93 --
 Young: 6704 - 105 ---
+Tweet:28604
 
 Educated: 6250 - 68
 Uneducated: 7382 - 77 ---
+Tweet:13215
 
 White: 4222 - 55 ---
 Latin: 5915 - 54
 Asian: 4948 - 59
 African_American: 4208 - 32 ---
+Tweet:19013
 
 Hetero: 2322 - 25 ---
 LGBTQ: 2559 - 29 --
-
+Tweet:3619 or 3619+21984
