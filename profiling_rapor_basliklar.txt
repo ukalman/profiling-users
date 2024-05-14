@@ -1,18 +1,19 @@
 -Abstract
 -Introduction
--Related Work
--The Approach
+-Problem Definition
+-Related Work (Literature Review)
+-The Approach(Methodology)
 --Dataset
 --BERT,ROBERTA,BERTWEET
---embedding, tokenize
+--Embedding, tokenize
 --Preprocess
--experimental evaluation
+-Experimental evaluation (Results)
 --model result,accuracy, loss,
 --evaluation metric
 --overall results for profiles
---limitations of approches
--conclusion
--future work
+--limitations of approaches (Discussion)
+-conclusion (The Impact and Future Directions)
+-future work (The Impact and Future Directions)
 -citation and reference
 
 Abstract of the Project
