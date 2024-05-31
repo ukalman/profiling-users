@@ -9,40 +9,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <img src="Images/hacet_nb.png" alt="" id="hacettepe-logo">
     <header>
         <h1>Profiling Social Media Users</h1>
-        <nav>
-            <ul>
-                <li><a href="#the-team">The Team</a></li>
-                <li><a href="#the-project">The Project</a></li>
-                <li><a href="#try-the-model">Try the Model</a></li>
-                <li><a href="#code">Code</a></li>
-                <li><a href="#data-set">Data Set</a></li>
-            </ul>
-        </nav>
+       
     </header>
+    <nav>
+        <ul>
+            <li><a href="#the-team">The Team</a></li>
+            <li><a href="#the-project">The Project</a></li>
+            <li><a href="#try-the-model">Try the Model</a></li>
+            <li><a href="#code">Code & Data Set</a></li>
+        </ul>
+    </nav>
+    
     <section id="the-team" class="card">
         <h2>The Team</h2>
-        <p>Information about the team...</p>
+        <div class="team-content">
+            <p id="team-info">&nbsp;We are senior students in Computer and Artificial Intelligence Engineering at Hacettepe University, working under the guidance of our supervisor, <a href="https://yunus.hacettepe.edu.tr/~akal/" target="blank">Fuat Akal</a>. Our project aims to contribute to the fields of demographic prediction and NLP models, inspiring further advancements in these areas.</p>
+            <div class="team-images">
+                <div class="bottom-images">
+                    <div class="team-member">
+                        <img src="Images/Project Member Photos/Baran_1.png" alt="Team Member 2">
+                        <p>Adem Baran Orhan<br>2200765034</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Images/Project Member Photos/Umut_1.JPEG" alt="Team Member 3">
+                        <p>Umut Kalman<br>21946256</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Images/Project Member Photos/Cagatay_2_nb.png" alt="Team Member 4">
+                        <p>İhsan Çağatay Eraslan<br>21827335</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="the-project" class="card">
         <h2>The Project</h2>
-        <p>Detailed project description...</p>
+        
+            <div class="project-container">
+                <div class="left-content">
+                    <p id="abstract">Abstract</p>
+                    <p class="project-info">&nbsp;Social media platforms are significant repositories of public opinion and societal trends in the modern digital era. However, the absence of comprehensive demographic information about social media users poses a challenge in analyzing these trends effectively. Our project, "Profiling Social Media Users," aims to bridge this gap by leveraging natural language processing (NLP) techniques to predict demographic traits such as age, gender, race, and education level.</p>
+                    <br>
+                    <p class="project-info">&nbsp;The core problem addressed by our project is the accurate categorization of social media users based on their demographic attributes. To achieve this, we propose developing a transformer that integrates various user-related factors, providing a nuanced and holistic analysis. Our methodology includes multiple stages: data collection from platforms like Twitter using web scraping tools, meticulous data labeling, feature engineering, and applying NLP techniques. The model is trained and fine-tuned iteratively to optimize its performance, yielding predictions that offer valuable insights into demographic patterns among social media users.</p>
+                    <br>
+                    <p class="project-info">&nbsp;The impact of our project is twofold: academically, it contributes to the field of demographic prediction by setting a standard for accuracy and fairness; practically, it provides a tool for researchers and organizations to understand better and engage with their audiences. Future directions for this project include expanding the dataset to cover more diverse social media platforms, enhancing the model's robustness, and exploring real-time demographic predictions. We also plan to scale up the training dataset, add more demographic categories, improve the model architecture, and publish academic papers to share our findings with the broader research community. In summary, "Profiling Social Media Users" presents a comprehensive solution to a significant challenge in social media analysis, advancing academic research and offering practical tools for societal benefit.</p>
+                    <br>
+                    <p style="font-size: 30px;"><a href="https://www.youtube.com/" target="blank">🎞️ Link to Promotional Video 🎞️</a></p>
+                </div>
+                <div class="right-content">
+                    
+                    <p id="tubitak-header">Tübitak 2209-A</p>
+                    <p class="project-info-extra">&nbsp;Our project has been selected for support by the Scientific and Technological Research Council of Turkey (TÜBİTAK) under the 2209-A University Students Research Projects Support Program. This support from TÜBİTAK not only reinforces the importance of our research but also enables us to further explore and understand the implications of social media behavior on demographic predictions. We look forward to progressing in our research and sharing our findings with the academic and scientific community.</p>
+                    <!--
+                    <img src="Images/tubitak.jpg" alt="Tubitak 2209">
+                    -->
+                    <p id="apify-header">Apify for Data Scraping</p>
+                    <p class="project-info-extra">&nbsp;We opted to utilize <a href="https://apify.com/quacker/twitter-scraper" target="blank">Apify Twitter Scraper</a>, a web scraping tool
+                        explicitly designed for extracting data from X(Twitter). Apify provides a user-friendly interface
+                        and robust functionality, enabling efficient and customizable data retrieval from the X(Twitter)
+                        platform. Its features include support for advanced search queries, data parsing, and
+                        scheduling, making it an ideal choice for our project's data collection needs.</p>
+
+                    <p id="bertweet-header">BERTweet</p>
+                    <p class="project-info-extra">&nbsp;We used <a href="https://huggingface.co/docs/transformers/model_doc/bertweet" target="blank">BERTweet</a> to classify tweets based on user characteristics such as race, gender,
+                        sexual orientation, education, and age. BERTweet is a variant of <a href="https://huggingface.co/docs/transformers/model_doc/bert">BERT</a>, pre-trained specifically for English tweets. It uses the same
+                        Transformer-based architecture as BERT, but the main differences are its pre-training
+                        procedure and the corpus on which it is trained.
+                        
+                        <br><br>&nbsp;
+                        Once we had the data, we preprocessed the tweets according to BERTweet's protocol, translating emojis into text strings, converting user mentions and web/URL links into unique tokens, and applying Byte Pair Encoding for sub-word tokenization. We adapted the pre-trained BERTweet model to our specific task using a supervised learning approach for the training part. Our model learned to associate given tweets with their corresponding user profile categories. After the model training, we used our fine-tuned BERTweet model to classify incoming tweets based on users' race, gender, sexual orientation, education, and age.</p>
+                </div>
+            </div>
     </section>
+           
     <section id="try-the-model" class="card">
         <h2>Try Our Model!</h2>
         <p>Maybe a link to our API...</p>
     </section>
     <section id="code" class="card">
-        <h2>Code</h2>
-        <p>Links to repositories and code documentation...</p>
+        <h2>Code & Data Set</h2>
+        <br>
+        <div class="inline-container">
+            <p>All the source code and the data set resides in our github repository.</p>
+            <a href="https://github.com/ukalman/profiling-users" class="button-link" target="_blank"><p>Link to Github Repository</p></a>
+        </div>
+       
     </section>
-    <section id="data-set" class="card">
-        <h2>Data Set</h2>
-        <p>Information about the data set used...</p>
-    </section>
+   
     <footer>
         <p>Contact us at <a href="mailto:cagatayer@gmail.com">cagatayer@gmail.com</a></p>
     </footer>
 </body>
 </html>
+
+
+
+ <!--
+        <p class="project-info">&nbsp;Our project, titled "Profiling Social Media Users," aims to predict demographic characteristics of social media users, such as age, gender, race, and additional user-specific factors, based on their posts. Leveraging natural language processing (NLP) techniques, we intend to create a model that accurately categorizes users, setting a benchmark in social media data analysis. This project is motivated by the need to understand and target specific conversations among diverse audiences on social media, where demographic information is often lacking.</p>
+        <br>
+        <p class="project-info">&nbsp;The project is divided into several phases: research and data collection, data labeling, model development, model testing, API development, and analysis and reporting. We start by identifying and scraping data from various social media platforms using tools like Apify Twitter Scraper. This data is then manually labeled to ensure accuracy and consistency. In the model development phase, we employ pre-trained transformer-based models like BERT and BERTweet, training them with our labeled datasets. The model's performance is evaluated using metrics such as accuracy, precision, recall, and F1 score, followed by iterative improvements to address potential biases.</p>
+        <br>
+        <p class="project-info">&nbsp;Our goal is to contribute valuable findings to the field of demographic prediction, addressing biases and ensuring fairness in our analysis. By bridging the gap in understanding social media user demographics, our project aims to set a new standard in demographic prediction. We hope to inspire future research and provide a robust, accurate model that enhances the understanding of public opinions and societal trends. Our comprehensive approach ensures that we not only analyze the content of user posts but also consider various user-related factors, ultimately paving the way for more accurate and fair demographic predictions in social media data analysis.</p>
+        -->
