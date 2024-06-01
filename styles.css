@@ -32,8 +32,14 @@ body {
     align-items: center;
 }
 
+
+
 #inline-container-huggingface{
     justify-content: space-between;
+}
+
+#inline-container-huggingface p {
+    max-width: 75%;
 }
 
 
@@ -185,8 +191,14 @@ p {
 }
 
 /* Header */
+header h1{
+    font-size: 2em;
+}
+
+
 header {
     /*background: rgba(0, 102, 255, 0.8); /* Semi-transparent background */
+    font-size: 2em;
     color: white;
     padding: 20px 10%;
     text-align: center;
@@ -314,21 +326,6 @@ section {
     margin-bottom: 20px; /* Add some space below the image */
 }
 
-@media only screen and (max-width: 768px) {
-    .project-container {
-        flex-direction: column;
-    }
-
-    .left-content,
-    .right-content {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .project-container::before {
-        display: none; /* Remove the vertical line on smaller screens */
-    }
-}
 
 
 
@@ -377,9 +374,129 @@ footer a {
     color: white;
     text-decoration: none;
 }
+/*
+@media only screen and (max-width: 1024px) {
+    #hacettepe-logo{
+        transform: scale(0.3);
+    }
+    header h1 {
+        font-size: 32px;; 
+    }
+}
+*/
 
-/* Responsive Design */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px){
+    #hacettepe-logo {
+    
+        transform: scale(0.3); /* Scale to 50% */
+        transform-origin: top left; /* Ensure scaling origin is top right */
+    }
+    p{
+        font-size: 18px;
+    }
+
+    header h1{ 
+        font-size: 40px;
+        margin-top: 32px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    
+
+    .team-member{
+        margin-bottom: 20px;
+    }
+
+
+    .team-images img {
+        width: 180px; /* Reduced image size */
+        height: 180px; /* Reduced image size */
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .inline-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inline-container p{
+        max-width: 100%;
+    }
+
+    #inline-container-huggingface p{
+        max-width: 100%;
+    }
+
+    .button-link {
+ 
+        padding: 10px 20px;
+        border: 2px solid #007bff;;
+        background-color: #007bff;;
+        color: white;
+        
+    }
+
+    #button-link-huggingface {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 20px 20px;
+        background-color: #FFD21E;
+        color: white;
+        font-size: 22px;
+    
+    }
+
+    #button-link-huggingface img {
+        display: none;
+     
+    }
+
+    #button-link-youtube{
+      
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        color: white;
+        margin-bottom: 20px;
+       
+    }    
+
+    #button-link-youtube p{
+      font-size: 20px;
+      
+       
+    }    
+
+
+    
+    #button-link-huggingface img {
+        margin-left: 8px;
+        height: 60px; /* Adjust this value based on the size of your image */
+    }
+
+    #button-link-github{
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    #button-link-drive{
+        margin-top:15px;
+        margin-bottom: 10px;
+        background-color: green;
+        color: white;
+    }
+    
+
+    
     header nav ul {
         padding-top: 20px;
     }
@@ -397,11 +514,239 @@ footer a {
         flex-direction: column;
     }
 
+    
+
     .team-content p {
         max-width: 100%; /* Allow text to expand full width on smaller screens */
     }
 
+    #team-info{
+        max-width: 100%;
+    }
+
+    .team-image{
+        width: 20px;
+    }
+
     .team-images {
         margin-top: 20px;
+        
     }
+
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-container::before {
+        display: none; /* Remove the vertical line on smaller screens */
+    }
+
+
+
+   
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    p{
+        font-size: 16px;
+    }
+
+    header h1{ 
+        font-size: 32px;
+        margin-top: 32px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .bottom-images {
+        display: block;
+    }
+
+    .team-member{
+        margin-bottom: 20px;
+    }
+
+
+
+    .team-images img {
+        width: 150px; /* Reduced image size */
+        height: 150px; /* Reduced image size */
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .inline-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inline-container p{
+        max-width: 100%;
+    }
+
+    #inline-container-huggingface p{
+        max-width: 100%;
+    }
+
+    .button-link {
+ 
+        padding: 10px 20px;
+        border: 2px solid #007bff;;
+        background-color: #007bff;;
+        color: white;
+        
+    }
+
+    #button-link-huggingface {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 20px 20px;
+        background-color: #FFD21E;
+        color: white;
+        font-size: 22px;
+    
+    }
+
+    #button-link-huggingface img {
+        display: none;
+     
+    }
+
+    #button-link-youtube{
+      
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        color: white;
+        margin-bottom: 20px;
+       
+    }    
+
+    #button-link-youtube p{
+      font-size: 20px;
+      
+       
+    }    
+
+
+    
+    #button-link-huggingface img {
+        margin-left: 8px;
+        height: 60px; /* Adjust this value based on the size of your image */
+    }
+
+    #button-link-github{
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+
+    #button-link-drive{
+        margin-top:15px;
+        margin-bottom: 10px;
+        background-color: green;
+        color: white;
+    }
+    
+
+    
+    header nav ul {
+        padding-top: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .team-content {
+        flex-direction: column;
+    }
+
+    
+
+    .team-content p {
+        max-width: 100%; /* Allow text to expand full width on smaller screens */
+    }
+
+    #team-info{
+        max-width: 100%;
+    }
+
+    .team-image{
+        width: 20px;
+    }
+
+    .team-images {
+        margin-top: 20px;
+        
+    }
+
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-container::before {
+        display: none; /* Remove the vertical line on smaller screens */
+    }
+
+
+
+    #hacettepe-logo {
+    
+        transform: scale(0.2); /* Scale to 50% */
+        transform-origin: top left; /* Ensure scaling origin is top right */
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    header h1{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+
+    #hacettepe-logo{
+        transform: scale(0.3); /* Scale to 50% */
+        transform-origin: top left; /* Ensure scaling origin is top right */
+    }
+
 }
