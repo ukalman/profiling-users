@@ -737,16 +737,30 @@ footer a {
 }
 
 
-@media only screen and (max-width: 480px) {
-    header h1{
-        font-size: 20px;
-        margin-top: 10px;
-    }
 
+@media only screen and (max-width: 480px) {
+    
+    header h1{
+        margin-top: 20px;
+    }
+    
 
     #hacettepe-logo{
-        transform: scale(0.3); /* Scale to 50% */
-        transform-origin: top left; /* Ensure scaling origin is top right */
+        transform: scale(0.2); 
+        transform-origin: top left; 
     }
 
+    #button-link-huggingface {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 14px 14px;
+        background-color: #FFD21E;
+        color: white;
+        font-size: 18px;
+    
+    }
+
+
 }
+
