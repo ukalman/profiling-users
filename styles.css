@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Basic Reset */
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
@@ -27,6 +32,12 @@ body {
     align-items: center;
 }
 
+#inline-container-huggingface{
+    justify-content: space-between;
+}
+
+
+
 .button-link {
     display: inline-block;
     padding: 10px 20px;
@@ -45,6 +56,63 @@ body {
     background-color: #007bff;;
     color: white;
 }
+
+#button-link-youtube {
+    border: 2px solid red;;
+    color: red;
+}
+
+#button-link-youtube:hover {
+    background-color: red;
+    color: white;
+}
+
+
+#button-link-drive{
+    border: 2px solid green;;
+    color: green;
+}
+
+#button-link-drive:hover{
+    background-color: green;
+    color: white;
+}
+
+
+#huggingface-container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+}
+
+
+#button-link-huggingface {
+
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 20px;
+    border: 2px solid #FFD21E;
+    color: #FFD21E;
+    font-size: 32px;
+
+}
+
+#button-link-huggingface img {
+    margin-left: 8px;
+    height: 60px; /* Adjust this value based on the size of your image */
+}
+
+#button-link-huggingface:hover {
+    background-color: #FFD21E;
+    color: white;
+}
+
+
+
+
+
 
 /* Typography */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@400;500&display=swap');
