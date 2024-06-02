@@ -73,6 +73,16 @@ body {
     color: white;
 }
 
+#button-link-poster {
+    border: 2px solid blue;;
+    color: blue;
+}
+
+#button-link-poster:hover {
+    background-color: blue;
+    color: white;
+}
+
 
 #button-link-drive{
     border: 2px solid green;;
@@ -477,6 +487,23 @@ footer a {
     }    
 
 
+    #button-link-poster{
+      
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        margin-bottom: 20px;
+       
+    }    
+
+    #button-link-poster p{
+      font-size: 20px;
+      
+       
+    }  
+
     
     #button-link-huggingface img {
         margin-left: 8px;
@@ -644,6 +671,23 @@ footer a {
     }    
 
     #button-link-youtube p{
+      font-size: 20px;
+      
+       
+    }    
+
+    #button-link-poster{
+      
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        margin-bottom: 20px;
+       
+    }    
+
+    #button-link-poster p{
       font-size: 20px;
       
        
