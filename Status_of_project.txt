@@ -1,25 +1,28 @@
-Nonbin: 3521 - 37 -
+Tweet number equals used tweets after preprocessing.
+Raw tweet number is given next to profiles.
+
+Nonbin: 4412 - 46 -
 Female: 8234 - 83 
-Trans: 5216 - 56 
+Trans: 5599 - 60 
 Male: 5481 - 57 ---
-Tweet:21984
+Tweet:23171
 
 
-Adult: 7711 - 87   
+Adult: 8397 - 94   
 Elderly: 8339 - 93 --
-Young: 6704 - 105 ---
-Tweet:28604
+Young: 7017 - 109 ---
+Tweet:29891
 
-Educated: 6250 - 68
-Uneducated: 7382 - 77 ---
-Tweet:13215
+Educated: 6449 - 70
+Uneducated: 7628 - 80 ---
+Tweet:13659
 
-White: 4222 - 55 ---
-Latin: 5915 - 54
+White: 4312 - 56 ---
+Latin: 5915 - 55
 Asian: 4948 - 59
-African_American: 4208 - 32 ---
-Tweet:19013
+African_American: 4987 - 40 ---
+Tweet:19865
 
-Hetero: 2322 - 25 ---
-LGBTQ: 2559 - 29 --
-Tweet:3619 or 3619+21984
+Hetero: 29853 - 159 ---
+LGBTQ: 21506 - 129 --
+Tweet:50201
