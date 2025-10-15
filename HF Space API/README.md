@@ -1,92 +1,87 @@
-# HF Space API - Social Media User Profiling
+# Social Media User Profiling with Sentiment Analysis
 
-This folder contains scripts to test and analyze social media user profiling using Hugging Face Spaces API.
+A comprehensive system for classifying social media users across multiple demographic categories (Race, Age, Gender, Education, Sexual Orientation) using sentiment analysis and voting mechanisms.
 
-## Files
+## 🎯 Project Overview
 
-- `test_hf_space.py` - Main script to classify users using HF Space API
-- `generate_summary.py` - Script to generate summary statistics from classification results
-- `requirements.txt` - Python dependencies
-- `Facebook Social Media Sample 2.csv` - Sample data file
+This project processes large-scale social media datasets to:
+1. **Combine sentiment analysis** with social media posts using democratic voting
+2. **Handle multi-post users** through intelligent voting mechanisms  
+3. **Classify users demographically** using HuggingFace ML models
+4. **Support collaborative processing** across multiple team members
 
-## Setup
+## 📊 Dataset Structure
 
-1. **Create and activate virtual environment:**
-```bash
-cd "HF Space API"
-python3 -m venv hf_space_env
-source hf_space_env/bin/activate  # On Windows: hf_space_env\Scripts\activate
+### Required Files
+- **21 CSV files** (~2GB total): `islam_2024_01.csv` to `islam_2024_12_02.csv`
+- **Sentiment data**: `user_sentiment_from_blocks.csv` (182K+ sentiment records)
+
+### Expected CSV Columns
+```
+post_owner.id, surface.id, text, post_owner.name, [other columns...]
 ```
 
-2. **Install dependencies:**
+### Key Statistics
+- **1.2M+ posts** across 21 CSV files
+- **194K+ unique users** to be classified
+- **97.8% high confidence** voting results
+- **95.8% unanimous sentiment** across multi-post users
+
+## 🛠️ Setup Instructions
+
+### 1. Environment Setup
 ```bash
+# Create virtual environment
+python -m venv profiling_env
+source profiling_env/bin/activate  # On Windows: profiling_env\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-## Usage
+### 2. Data Preparation
+```
+📁 Your Project Folder/
+├── profiling-users/
+│   └── HF Space API/                    # This repository
+│       ├── single_space_processor.py   # Main processing script
+│       ├── user_sentiment_from_blocks.csv
+│       └── requirements.txt
+└── ProfilingSocialMedia/               # Your CSV data folder
+    ├── islam_2024_01.csv
+    ├── islam_2024_02.csv
+    └── ... (21 CSV files total)
+```
 
-### 1. Classify Users
+### 3. HuggingFace Space Configuration
+- **Team Member 1**: Uses `baranorhan/Profiling-Social-Media-Users`
+- **Team Member 2**: Uses `CatoEr/Profiling-Social-Media-Users`
 
-Run the main classification script:
+## 🚀 Usage Guide
+
+### Single Space Processing (Recommended)
+
+#### Quick Test (First 2 files)
 ```bash
-python test_hf_space.py
+python single_space_processor.py --start 0 --end 2
 ```
 
-This will:
-- Load data from `../Islam 2024 Data.csv` (in parent directory)
-- Group posts by user (`post_owner.name`)
-- Send up to 20 texts per user to the HF Space API
-- Save results to `../classification_results_islam_2024_01.csv`
-- Generate log file `../hf_space_test.log`
-
-### 2. Generate Summary Statistics
-
-After classification, generate summary statistics:
+#### Process File Range
 ```bash
-python generate_summary.py
+# Process files 0-10 (for team member 1)
+python single_space_processor.py --start 0 --end 11
+
+# Process files 11-20 (for team member 2)  
+python single_space_processor.py --start 11 --end 21
 ```
 
-This will:
-- Parse classification results from `../classification_results.csv`
-- Generate summary CSVs in the parent directory:
-  - Overall summary with all categories
-  - Individual category summaries (Race, Age, Education, Gender, Sexual Orientation)
-  - Detailed user breakdown
-
-## Configuration
-
-### test_hf_space.py
-- `CSV_FILE_PATH`: Path to input CSV file
-- `OUTPUT_FILE_PATH`: Path for classification results
-- `DELAY_BETWEEN_REQUESTS`: Seconds to wait between API calls (rate limiting)
-
-### generate_summary.py
-- `RESULTS_CSV_PATH`: Path to classification results CSV
-- `OUTPUT_DIR`: Directory to save summary files
-
-## Output Files
-
-### Classification Results
-- Contains user-by-user classification results with probabilities and predictions
-
-### Summary Files
-- `classification_summary_overall_[timestamp].csv` - Combined summary of all categories
-- `classification_summary_[category]_[timestamp].csv` - Individual category summaries
-- `classification_detailed_breakdown_[timestamp].csv` - User-by-user predictions
-
-## Example Summary Output
-
-```
-Category,Class,Count,Percentage,Average_Probability
-RACE,Asian,10,71.43,65.55
-RACE,White,2,14.29,18.87
-SEXUAL ORIENTATION,Heterosexual,12,85.71,87.18
-SEXUAL ORIENTATION,LGBTQ,2,14.29,12.82
+#### Process All Files
+```bash
+python single_space_processor.py --start 0 --end 21
 ```
 
-## Notes
-
-- All data files and results are stored in the parent directory
-- The scripts use relative paths (`../`) to access files in the parent directory
-- Rate limiting is implemented to avoid overwhelming the HF Space API
-- Comprehensive logging is available for debugging
+### Dual Space Processing (Advanced)
+```bash
+# Uses both spaces in parallel for faster processing
+python large_dataset_processor.py --start 0 --end 21
+```
