@@ -1,0 +1,45 @@
+# Large data files
+HF Space API/single_space_results_updated.csv
+# Allow the smaller results file
+!HF Space API/single_space_results.csv
+
+# Log files
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Virtual environments
+hf_space_env/
+profiling_social_hf_space/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Backup files
+*_backup.json
