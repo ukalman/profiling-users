@@ -1,0 +1,36 @@
+user_id,user_name,num_posts,voted_sentiment,sentiment_confidence,winning_percentage,is_unanimous,surface_ids_sample,individual_sentiments_sample,sentiment_pos,sentiment_neg,first_post_sample,classification,status,error,processed_by,timestamp
+587364596981484,MAS Youth Center,55,pos,1.0,100.0,True,"[587364596981484, 587364596981484, 587364596981484]","['pos', 'pos', 'pos']",55,0,THIS Saturday: Join us for a pre-ramadan Qur’an night! See you there at 7:30!,"RACE
+ Probabilities:
+African American = 0.78%
+Asian = 84.22%
+Latin = 3.02%
+White = 11.97%
+Predicted as: Asian
+
+AGE
+ Probabilities:
+Adult = 76.98%
+Elderly = 18.14%
+Young = 4.88%
+Predicted as: Adult
+
+EDUCATION
+ Probabilities:
+Educated = 17.01%
+Uneducated = 82.99%
+Predicted as: Uneducated
+
+GENDER
+ Probabilities:
+Female = 17.37%
+Male = 56.81%
+Non-Binary = 10.21%
+Transgender = 15.61%
+Predicted as: Male
+
+SEXUAL ORIENTATION
+ Probabilities:
+Heterosexual = 1.41%
+LGBTQ = 98.59%
+Predicted as: LGBTQ
+",success,,baranorhan/Profiling-Social-Media-Users,2025-10-29T17:50:30.842390
