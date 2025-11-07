@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "total_users": 177168,
+    "total_posts": "812401",
+    "analysis_date": "2025-11-08T00:52:20.941929",
+    "description": "Analysis of Facebook posts about Islam - User demographic and sentiment distribution"
+  },
+  "demographics": {
+    "race": {
+      "distribution": {
+        "Asian": 150411,
+        "White": 16743,
+        "Latin": 8588,
+        "African American": 1394
+      },
+      "percentages": {
+        "Asian": 84.91,
+        "White": 9.45,
+        "Latin": 4.85,
+        "African American": 0.79
+      },
+      "total_classified": "177136",
+      "unclassified": "32"
+    },
+    "age": {
+      "distribution": {
+        "Adult": 155162,
+        "Young": 12557,
+        "Elderly": 9417
+      },
+      "percentages": {
+        "Adult": 87.59,
+        "Young": 7.09,
+        "Elderly": 5.32
+      },
+      "total_classified": "177136",
+      "unclassified": "32"
+    },
+    "education": {
+      "distribution": {
+        "Uneducated": 172178,
+        "Educated": 4958
+      },
+      "percentages": {
+        "Uneducated": 97.2,
+        "Educated": 2.8
+      },
+      "total_classified": "177136",
+      "unclassified": "32"
+    },
+    "gender": {
+      "distribution": {
+        "Male": 151245,
+        "Female": 15934,
+        "Transgender": 8653,
+        "Non-Binary": 1304
+      },
+      "percentages": {
+        "Male": 85.38,
+        "Female": 9.0,
+        "Transgender": 4.88,
+        "Non-Binary": 0.74
+      },
+      "total_classified": "177136",
+      "unclassified": "32"
+    },
+    "sexual_orientation": {
+      "distribution": {
+        "Heterosexual": 128524,
+        "LGBTQ": 48612
+      },
+      "percentages": {
+        "Heterosexual": 72.56,
+        "LGBTQ": 27.44
+      },
+      "total_classified": "177136",
+      "unclassified": "32"
+    }
+  },
+  "sentiment_analysis": {
+    "overall_distribution": {
+      "pos": 115753,
+      "neu": 54776,
+      "neg": 6639
+    },
+    "overall_percentages": {
+      "pos": 65.34,
+      "neu": 30.92,
+      "neg": 3.75
+    },
+    "by_category": {
+      "race": {
+        "African American": {
+          "counts": {
+            "neg": "142",
+            "neu": "423",
+            "pos": "829"
+          },
+          "percentages": {
+            "neg": 10.19,
+            "neu": 30.34,
+            "pos": 59.47
+          }
+        },
+        "Asian": {
+          "counts": {
+            "neg": "4363",
+            "neu": "43658",
+            "pos": "102390"
+          },
+          "percentages": {
+            "neg": 2.9,
+            "neu": 29.03,
+            "pos": 68.07
+          }
+        },
+        "Latin": {
+          "counts": {
+            "neg": "274",
+            "neu": "4033",
+            "pos": "4281"
+          },
+          "percentages": {
+            "neg": 3.19,
+            "neu": 46.96,
+            "pos": 49.85
+          }
+        },
+        "White": {
+          "counts": {
+            "neg": "1858",
+            "neu": "6651",
+            "pos": "8234"
+          },
+          "percentages": {
+            "neg": 11.1,
+            "neu": 39.72,
+            "pos": 49.18
+          }
+        }
+      },
+      "age": {
+        "Adult": {
+          "counts": {
+            "neg": "5572",
+            "neu": "44159",
+            "pos": "105431"
+          },
+          "percentages": {
+            "neg": 3.59,
+            "neu": 28.46,
+            "pos": 67.95
+          }
+        },
+        "Elderly": {
+          "counts": {
+            "neg": "604",
+            "neu": "3804",
+            "pos": "5009"
+          },
+          "percentages": {
+            "neg": 6.41,
+            "neu": 40.4,
+            "pos": 53.19
+          }
+        },
+        "Young": {
+          "counts": {
+            "neg": "461",
+            "neu": "6802",
+            "pos": "5294"
+          },
+          "percentages": {
+            "neg": 3.67,
+            "neu": 54.17,
+            "pos": 42.16
+          }
+        }
+      },
+      "education": {
+        "Educated": {
+          "counts": {
+            "neg": "242",
+            "neu": "955",
+            "pos": "3761"
+          },
+          "percentages": {
+            "neg": 4.88,
+            "neu": 19.26,
+            "pos": 75.86
+          }
+        },
+        "Uneducated": {
+          "counts": {
+            "neg": "6395",
+            "neu": "53810",
+            "pos": "111973"
+          },
+          "percentages": {
+            "neg": 3.71,
+            "neu": 31.25,
+            "pos": 65.03
+          }
+        }
+      },
+      "gender": {
+        "Female": {
+          "counts": {
+            "neg": "574",
+            "neu": "5847",
+            "pos": "9513"
+          },
+          "percentages": {
+            "neg": 3.6,
+            "neu": 36.7,
+            "pos": 59.7
+          }
+        },
+        "Male": {
+          "counts": {
+            "neg": "5786",
+            "neu": "44965",
+            "pos": "100494"
+          },
+          "percentages": {
+            "neg": 3.83,
+            "neu": 29.73,
+            "pos": 66.44
+          }
+        },
+        "Non-Binary": {
+          "counts": {
+            "neg": "28",
+            "neu": "636",
+            "pos": "640"
+          },
+          "percentages": {
+            "neg": 2.15,
+            "neu": 48.77,
+            "pos": 49.08
+          }
+        },
+        "Transgender": {
+          "counts": {
+            "neg": "249",
+            "neu": "3317",
+            "pos": "5087"
+          },
+          "percentages": {
+            "neg": 2.88,
+            "neu": 38.33,
+            "pos": 58.79
+          }
+        }
+      },
+      "sexual_orientation": {
+        "Heterosexual": {
+          "counts": {
+            "neg": "5497",
+            "neu": "30717",
+            "pos": "92310"
+          },
+          "percentages": {
+            "neg": 4.28,
+            "neu": 23.9,
+            "pos": 71.82
+          }
+        },
+        "LGBTQ": {
+          "counts": {
+            "neg": "1140",
+            "neu": "24048",
+            "pos": "23424"
+          },
+          "percentages": {
+            "neg": 2.35,
+            "neu": 49.47,
+            "pos": 48.19
+          }
+        }
+      }
+    }
+  },
+  "cross_analysis": {
+    "age_vs_gender": {
+      "Female": {
+        "Adult": 12634,
+        "Elderly": 1588,
+        "Young": 1712
+      },
+      "Male": {
+        "Adult": 135375,
+        "Elderly": 6933,
+        "Young": 8937
+      },
+      "Non-Binary": {
+        "Adult": 210,
+        "Elderly": 133,
+        "Young": 961
+      },
+      "Transgender": {
+        "Adult": 6943,
+        "Elderly": 763,
+        "Young": 947
+      }
+    },
+    "race_vs_education": {
+      "Educated": {
+        "African American": 104,
+        "Asian": 3770,
+        "Latin": 410,
+        "White": 674
+      },
+      "Uneducated": {
+        "African American": 1290,
+        "Asian": 146641,
+        "Latin": 8178,
+        "White": 16069
+      }
+    }
+  },
+  "post_statistics": {
+    "total_posts": 812401,
+    "avg_posts_per_user": 4.59,
+    "median_posts_per_user": 1,
+    "max_posts_per_user": 6543,
+    "min_posts_per_user": 1
+  }
+}
